@@ -198,7 +198,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -621,4 +621,19 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+*:focus {
+  outline: none;
+}
+.currentPageNumber {
+  transition: all 200ms ease-in-out;
+}
+.currentPageNumber::selection {
+  background: #a9a9a9;
+}
+.currentPageNumber:hover {
+  background: #1e2123 !important;
+}
+.currentPageNumber:focus {
+  background: #1e2123 !important;
 }
